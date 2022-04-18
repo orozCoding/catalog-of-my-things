@@ -23,4 +23,16 @@ class Item
     @genre = genre
     genre.items.push(self) unless genre.items.include?(self)
   end
+
+  private :can_be_archived?
+
+  def can_be_archived?
+    return true if @publish_date < DateTime.now.next_year(-10)
+
+    false
+  end
+
+  def move_to_archived
+    @archived = true if can_be_archived?
+  end
 end
