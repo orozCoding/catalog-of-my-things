@@ -1,7 +1,7 @@
 require './classes/game'
 
 describe Game do
-  it 'Test the proprities' do
+  it 'Test the properties' do
     game = Game.new('2000-05-05', 5, '2012-05-05')
     expect(game).to be_an_instance_of Game
     expect(game.last_played_at).to be_a(DateTime)
