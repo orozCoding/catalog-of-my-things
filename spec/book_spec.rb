@@ -1,4 +1,4 @@
-require './Classes/book'
+require './classes/book'
 require 'date'
 
 describe Book do
