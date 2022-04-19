@@ -9,15 +9,11 @@ class Game < Item
 
   def last_played_old
     return true if @last_played_at < DateTime.now.next_year(-2)
-
-    false
   end
 
   private :last_played_old
 
   def can_be_archived?
     return true if last_played_old && super
-
-    false
   end
 end
