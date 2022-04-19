@@ -17,7 +17,15 @@ describe MusicAlbum do
     end
 
     it "If instance of MusicAlbum with date" do
-      expect(@music_album.instance_of?(MusicAlbum)).to be(true) 
+      instance_property = @music_album.publish_date
+      expect(instance_property).to eq('2010-06-23') 
+    end
+
+    it 'instance of on spotify property' do
+      instance_property = @music_album.on_spotify
+      expect(instance_property).to eq(true)
     end
   end
 end
+
+
