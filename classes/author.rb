@@ -29,4 +29,5 @@ class Author
         'last_name' => @last_name
       }
     }.to_json(*args)
+  end
 end
