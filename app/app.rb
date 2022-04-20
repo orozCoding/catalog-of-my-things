@@ -34,7 +34,6 @@ class App
     @sources = []
   end
 
-
   def list_options
     puts ''
     @options_list.each do |option|
