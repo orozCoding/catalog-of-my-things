@@ -23,6 +23,18 @@ class App
     @options_list = Options.new.list
   end
 
+  def populate_app
+    @books = []
+    @music_albums = []
+    @movies = []
+    @games = []
+    @genres = []
+    @labels = []
+    @authors = []
+    @sources = []
+  end
+
+
   def list_options
     puts ''
     @options_list.each do |option|
