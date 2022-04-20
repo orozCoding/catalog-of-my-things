@@ -12,3 +12,6 @@ require_relative 'book_module'
 require_relative 'genre_module'
 require_relative 'music_album_module'
 require_relative '../modules/save_data'
+require_relative '../modules/populate_music_albums'
+require_relative '../modules/populate_genres'
+
