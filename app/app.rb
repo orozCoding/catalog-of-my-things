@@ -1,6 +1,8 @@
 require_relative 'requires'
 
 class App
+  include GameModule
+  include AuthorModule
   include BookModule
   include LabelModule
 

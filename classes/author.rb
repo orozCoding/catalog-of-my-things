@@ -15,4 +15,8 @@ class Author
     @items << item
     item.author = self
   end
+
+  def change_id(id)
+    @id = id
+  end
 end
