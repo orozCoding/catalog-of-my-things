@@ -6,6 +6,7 @@ module LabelModule
     color = gets.chomp.to_s.capitalize
     label = Label.new(title, color)
     @labels << label
+    persist_data(@labels, './data/labels')
     label
   end
 

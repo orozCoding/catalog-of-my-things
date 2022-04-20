@@ -17,4 +17,15 @@ class Label
   def change_id(id)
     @id = id
   end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'label' => {
+        'id' => @id,
+        'title' => @title,
+        'color' => @color
+      }
+    }.to_json(*args)
+  end
 end
