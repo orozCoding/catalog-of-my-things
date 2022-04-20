@@ -1,6 +1,7 @@
 require_relative 'requires'
 
 class App
+  include SaveData
   include GameModule
   include AuthorModule
   include BookModule
@@ -21,6 +22,18 @@ class App
     @sources = []
     @options_list = Options.new.list
   end
+
+  def populate_app
+    @books = []
+    @music_albums = []
+    @movies = []
+    @games = []
+    @genres = []
+    @labels = []
+    @authors = []
+    @sources = []
+  end
+
 
   def list_options
     puts ''
