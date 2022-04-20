@@ -4,6 +4,7 @@ module GenreModule
     name = gets.chomp.to_s.capitalize
     genre = Genre.new(name)
     @genres << genre
+    persist_data(@genres, './data/genres')
     genre
   end
 
