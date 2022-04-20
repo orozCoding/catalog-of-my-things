@@ -13,7 +13,6 @@ module PopulateGames
       new_game.author = @authors.find { |author| author.id == game['game']['author']['author']['id'] }
       new_game.genre = @genres.find { |genre| genre.id == game['game']['genre']['genre']['id'] }
       new_game.label = @labels.find { |label| label.id == game['game']['label']['label']['id'] }
-      new_game.source = @sources.find { |source| source.id == game['game']['source']['source']['id'] }
       games_array << new_game
     end
     games_array

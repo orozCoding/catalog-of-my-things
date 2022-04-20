@@ -15,9 +15,6 @@ module PopulateMusicAlbums
       end
       new_music_album.genre = @genres.find { |genre| genre.id == music_album['music_album']['genre']['genre']['id'] }
       new_music_album.label = @labels.find { |label| label.id == music_album['music_album']['label']['label']['id'] }
-      new_music_album.source = @sources.find do |source|
-        source.id == music_album['music_album']['source']['source']['id']
-      end
       music_albums_array << new_music_album
     end
     music_albums_array
