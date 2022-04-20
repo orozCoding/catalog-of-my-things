@@ -24,7 +24,7 @@ class Book < Item
       }
     }.to_json(*args)
   end
-  
+
   alias parent_can_be_archived? can_be_archived?
 
   private
