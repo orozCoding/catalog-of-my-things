@@ -1,0 +1,1 @@
+[{"json_class":"MusicAlbum","music_album":{"id":3789,"publish_date":"2010-04-05T00:00:00+00:00","on_spotify":true,"author":{"json_class":"Author","author":{"id":6064,"first_name":"Taylor","last_name":"Swift"}},"genre":{"json_class":"Genre","genre":{"id":9100,"name":"Pop"}},"label":{"json_class":"Label","label":{"id":9835,"title":"New","color":"Blue"}},"source":null}}]
