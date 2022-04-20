@@ -12,7 +12,6 @@ module PopulateBooks
       new_book.author = @authors.find { |author| author.id == book['book']['author']['author']['id'] }
       new_book.genre = @genres.find { |genre| genre.id == book['book']['genre']['genre']['id'] }
       new_book.label = @labels.find { |label| label.id == book['book']['label']['label']['id'] }
-      new_book.source = @sources.find { |source| source.id == book['book']['source']['source']['id'] }
       books_array << new_book
     end
     books_array

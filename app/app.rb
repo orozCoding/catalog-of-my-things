@@ -30,13 +30,13 @@ class App
   end
 
   def populate_app
+    @authors = populate_authors
+    @genres = populate_genres
+    @labels = populate_labels
     @books = populate_books
     @music_albums = populate_music_albums
     @movies = []
     @games = populate_games
-    @genres = populate_genres
-    @labels = populate_labels
-    @authors = populate_authors
     @sources = []
   end
 
