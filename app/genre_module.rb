@@ -4,6 +4,7 @@ module GenreModule
     name = gets.chomp.to_s.capitalize
     genre = Genre.new(name)
     @genres << genre
+    genre
   end
 
   def list_genres

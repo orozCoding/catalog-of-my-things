@@ -1,6 +1,9 @@
-require_relative 'options'
+require_relative 'requires'
 
 class App
+  include MusicAlbumModule
+  include GenreModule
+  
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
   def initialize

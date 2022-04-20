@@ -1,0 +1,5 @@
+require_relative '../classes/music_album'
+require_relative '../classes/genre'
+require_relative 'options'
+require_relative 'genre_module'
+require_relative 'music_album_module'

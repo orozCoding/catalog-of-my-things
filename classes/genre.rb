@@ -13,9 +13,10 @@ class Genre
   end
 
   def add_item(item)
-    @items.push(item) unless @items.include?(item)
+    @items << item
     item.genre = self
   end
+
 
   def change_id(id)
     @id = id
