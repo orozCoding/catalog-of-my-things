@@ -16,4 +16,8 @@ class Genre
     @items.push(item) unless @items.include?(item)
     item.genre = self
   end
+
+  def change_id(id)
+    @id = id
+  end
 end
