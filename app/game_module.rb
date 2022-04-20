@@ -35,6 +35,8 @@ module GameModule
     game = Game.new(data[:publish_date], data[:last_played_at], multiplayer: data[:multiplayer])
 
     game.author = select_author
+    game.genre = select_genre
+    game.label = select_label
 
     @games << game
 
