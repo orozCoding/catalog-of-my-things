@@ -1,0 +1,5 @@
+require_relative '../classes/book'
+require_relative '../classes/label'
+require_relative 'options'
+require_relative 'label_module'
+require_relative 'book_module'
