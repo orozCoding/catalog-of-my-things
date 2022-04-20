@@ -6,8 +6,8 @@ describe Genre do
   context 'When instantiated' do
     before(:all) do
       @genre = Genre.new('old skool')
-      today = Date.today
-      twelve_years = Date.new(today.year - 12, today.month, today.day)
+      today = '2022-04-19'
+      twelve_years = '2010-04-19'
       @item = Item.new(twelve_years)
       @item2 = Item.new(today)
     end
@@ -38,8 +38,8 @@ describe Genre do
   context 'When instantiated' do
     before(:all) do
       @genre = Genre.new('old skool')
-      today = Date.today
-      twelve_years = Date.new(today.year - 12, today.month, today.day)
+      today = '2022-04-19'
+      twelve_years = '2010-04-19'
       @item = Item.new(twelve_years)
       @item2 = Item.new(today)
     end
