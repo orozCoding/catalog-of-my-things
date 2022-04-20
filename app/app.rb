@@ -3,6 +3,8 @@ require_relative 'requires'
 class App
   include GameModule
   include AuthorModule
+  include BookModule
+  include LabelModule
 
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
