@@ -19,4 +19,15 @@ class Author
   def change_id(id)
     @id = id
   end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'author' => {
+        'id' => @id,
+        'first_name' => @first_name,
+        'last_name' => @last_name
+      }
+    }.to_json(*args)
+  end
 end

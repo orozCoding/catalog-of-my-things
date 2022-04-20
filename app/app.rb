@@ -8,6 +8,8 @@ class App
   include LabelModule
   include MusicAlbumModule
   include GenreModule
+  include PopulateAuthors
+  include PopulateGames
   include PopulateMusicAlbums
   include PopulateGenres
   include PopulateBooks
@@ -31,10 +33,10 @@ class App
     @books = populate_books
     @music_albums = populate_music_albums
     @movies = []
-    @games = []
+    @games = populate_games
     @genres = populate_genres
     @labels = populate_labels
-    @authors = []
+    @authors = populate_authors
     @sources = []
   end
 
