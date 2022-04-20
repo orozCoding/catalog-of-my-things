@@ -1,7 +1,6 @@
 require_relative 'options'
 
 class App
-
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
   def initialize
@@ -30,7 +29,6 @@ class App
   end
 
   def run_option(option)
-
     if option.positive? && option <= @options_list.length - 1
       send(@options_list[option - 1][1])
     elsif option == @options_list.length
