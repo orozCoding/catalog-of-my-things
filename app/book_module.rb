@@ -8,7 +8,7 @@ module BookModule
 
     @books.each_with_index do |book, index|
       puts "
-      [#{index + 1}] - Author: #{book.author.first_name} #{book.author.last_name}
+      [#{index + 1}] - Author: #{book.author.first_name} #{book.author.last_name}.
       Cover State: #{book.cover_state}. Label: #{book.label.title}.
       Publish date: #{book.publish_date.year}-#{book.publish_date.month}-#{book.publish_date.day}.
       "

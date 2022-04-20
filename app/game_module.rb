@@ -8,8 +8,8 @@ module GameModule
 
     @games.each_with_index do |game, index|
       puts "[#{index + 1}] - Author: #{game.author.first_name} #{game.author.last_name}.
-      Genre: #{game.genre.name}. Publish date: #{game.publish_date}
-      Multiplayer: #{game.multiplayer}. Last played date: #{game.last_played_at}"
+      Genre: #{game.genre.name}. Publish date: #{game.publish_date}.
+      Multiplayer: #{game.multiplayer}. Last played date: #{game.last_played_at}."
     end
   end
 
