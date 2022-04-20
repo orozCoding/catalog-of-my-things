@@ -5,6 +5,8 @@ def main
 
   puts 'Welcome to School Library App!'
 
+  app.populate_app
+
   loop do
     app.list_options
     option = app.select_option
