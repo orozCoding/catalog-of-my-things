@@ -20,4 +20,14 @@ class Genre
   def change_id(id)
     @id = id
   end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'genre' => {
+        'id' => @id,
+        'name' => @name
+      }
+    }.to_json(*args)
+  end
 end

@@ -37,6 +37,8 @@ module MusicAlbumModule
 
     @music_albums << music_album
 
+    persist_data(@music_albums, './data/music_albums')
+
     puts '
     MUSIC ALBUM SUCCESFULLY CREATED!
     '

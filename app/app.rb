@@ -10,6 +10,10 @@ class App
   include GenreModule
   include PopulateAuthors
   include PopulateGames
+  include PopulateMusicAlbums
+  include PopulateGenres
+  include PopulateBooks
+  include PopulateLabels
 
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
@@ -26,12 +30,12 @@ class App
   end
 
   def populate_app
-    @books = []
-    @music_albums = []
+    @books = populate_books
+    @music_albums = populate_music_albums
     @movies = []
     @games = populate_games
-    @genres = []
-    @labels = []
+    @genres = populate_genres
+    @labels = populate_labels
     @authors = populate_authors
     @sources = []
   end
