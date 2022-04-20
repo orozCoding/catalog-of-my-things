@@ -33,6 +33,8 @@ module BookModule
 
     book = Book.new(data[:publish_date], data[:publisher], data[:cover_state])
 
+    book.author = select_author
+    book.genre = select_genre
     book.label = select_label
 
     @books << book

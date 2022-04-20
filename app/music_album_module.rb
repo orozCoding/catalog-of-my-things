@@ -31,6 +31,8 @@ module MusicAlbumModule
 
     music_album = MusicAlbum.new(data[:publish_date], on_spotify: data[:on_spotify])
 
+    music_album.author = select_author
+    music_album.label = select_label
     music_album.genre = select_genre
 
     @music_albums << music_album
