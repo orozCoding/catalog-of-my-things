@@ -6,7 +6,6 @@ module AuthorModule
     last_name = gets.chomp.to_s.capitalize
     author = Author.new(name, last_name)
     @authors << author
-    persist_data(@authors, './data/authors')
     author
   end
 
