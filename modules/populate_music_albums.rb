@@ -11,7 +11,7 @@ module PopulateMusicAlbums
                                        on_spotify: music_album['music_album']['on_spotify'])
       new_music_album.change_id(music_album['music_album']['id'])
       new_music_album.author = @authors.find do |author|
-      author.id == music_album['music_album']['author']['author']['id']
+        author.id == music_album['music_album']['author']['author']['id']
       end
       new_music_album.genre = @genres.find { |genre| genre.id == music_album['music_album']['genre']['genre']['id'] }
       new_music_album.label = @labels.find { |label| label.id == music_album['music_album']['label']['label']['id'] }

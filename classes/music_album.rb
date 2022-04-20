@@ -28,6 +28,5 @@ class MusicAlbum < Item
     }.to_json(*args)
   end
 
-
   private :can_be_archived?
 end
