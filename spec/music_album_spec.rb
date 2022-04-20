@@ -4,7 +4,7 @@ require 'date'
 describe MusicAlbum do
   context 'when Instantiated' do
     before(:each) do
-      @music_album = MusicAlbum.new('2010-06-23')
+      @music_album = MusicAlbum.new('2010-04-19')
     end
 
     it 'Create instance of music album class' do
@@ -17,7 +17,7 @@ describe MusicAlbum do
 
     it 'If instance of MusicAlbum with date' do
       instance_property = @music_album.publish_date
-      expect(instance_property).to eq('2010-06-23')
+      expect(instance_property).to be_a(DateTime)
     end
 
     it 'instance of on spotify property' do
