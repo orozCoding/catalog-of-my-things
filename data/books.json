@@ -1,0 +1,1 @@
+[{"json_class":"Book","book":{"id":6603,"publish_date":"2002-05-05T00:00:00+00:00","publisher":"edit","cover_state":"bad","author":"#<Author:0x000001e310b712a0>","genre":"#<Genre:0x000001e310b70f80>","label":{"json_class":"Label","label":{"id":2308,"title":"New","color":"Blue"}},"source":null}}]

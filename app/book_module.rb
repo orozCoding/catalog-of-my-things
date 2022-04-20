@@ -39,6 +39,8 @@ module BookModule
 
     @books << book
 
+    persist_data(@books, './data/books')
+
     puts '
     BOOK SUCCESFULLY CREATED!
     '
