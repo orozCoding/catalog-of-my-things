@@ -5,6 +5,8 @@ class App
   include AuthorModule
   include BookModule
   include LabelModule
+  include MusicAlbumModule
+  include GenreModule
 
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
