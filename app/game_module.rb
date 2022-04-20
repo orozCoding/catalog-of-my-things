@@ -40,6 +40,8 @@ module GameModule
 
     @games << game
 
+    persist_data(@games, './data/games')
+
     puts '
     GAME SUCCESFULLY CREATED!
     '

@@ -9,6 +9,7 @@ class App
   include MusicAlbumModule
   include GenreModule
   include PopulateAuthors
+  include PopulateGames
 
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
@@ -28,10 +29,10 @@ class App
     @books = []
     @music_albums = []
     @movies = []
-    @games = []
+    @games = populate_games
     @genres = []
     @labels = []
-    @authors = []
+    @authors = populate_authors
     @sources = []
   end
 
