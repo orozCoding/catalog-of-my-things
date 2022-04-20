@@ -8,6 +8,7 @@ class App
   include LabelModule
   include MusicAlbumModule
   include GenreModule
+  include PopulateAuthors
 
   attr_accessor :books, :music_albums, :movies, :games, :genres, :labels, :authors, :sources
 
