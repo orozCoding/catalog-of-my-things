@@ -32,7 +32,7 @@ module MusicAlbumModule
     music_album = MusicAlbum.new(data[:publish_date], on_spotify: data[:on_spotify])
 
     music_album.genre = select_genre
-    
+
     @music_albums << music_album
 
     puts '

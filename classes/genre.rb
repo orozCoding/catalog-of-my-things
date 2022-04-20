@@ -17,7 +17,6 @@ class Genre
     item.genre = self
   end
 
-
   def change_id(id)
     @id = id
   end
