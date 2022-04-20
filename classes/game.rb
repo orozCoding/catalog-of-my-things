@@ -3,7 +3,7 @@ require_relative 'item'
 class Game < Item
   attr_accessor :multiplayer, :last_played_at
 
-  def initialize(publish_date, last_played_at, multiplayer)
+  def initialize(publish_date, last_played_at, multiplayer: true)
     super(publish_date)
     @multiplayer = multiplayer
     @last_played_at = DateTime.parse(last_played_at)
