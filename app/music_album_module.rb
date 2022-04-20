@@ -7,7 +7,7 @@ module MusicAlbumModule
     end
 
     @music_albums.each_with_index do |album, index|
-      puts "[#{index + 1}] - Author: #{book.author.first_name} #{book.author.last_name}.
+      puts "[#{index + 1}] - Author: #{album.author.first_name} #{album.author.last_name}.
       Genre: #{album.genre.name}. Is it on Spotify?: #{album.on_spotify}.
       Publish date: #{album.publish_date}."
     end
