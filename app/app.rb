@@ -1,6 +1,7 @@
 require_relative 'requires'
 
 class App
+  include SaveData
   include GameModule
   include AuthorModule
   include BookModule
